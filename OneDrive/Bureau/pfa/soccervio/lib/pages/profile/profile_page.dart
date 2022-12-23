@@ -1,11 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:soccervio/pages/forgot_password_page.dart';
 import 'package:soccervio/pages/login_page.dart';
-import 'package:soccervio/pages/registration_page.dart';
 import 'package:soccervio/pages/splash_screen.dart';
 import 'package:soccervio/pages/widgets/header_widget.dart';
+
+import '../forgot_password_page.dart';
+import '../forgot_password_verification_page.dart';
+import '../registration_page.dart';
 
 class ProfilePage extends StatefulWidget {
   @override
@@ -106,7 +108,7 @@ class _ProfilePageState extends State<ProfilePage> {
                 child: Container(
                   alignment: Alignment.bottomLeft,
                   child: Text(
-                    "FlutterTutorial.Net",
+                    "Houria Shaibi",
                     style: TextStyle(
                         fontSize: 25,
                         color: Colors.white,
@@ -116,12 +118,12 @@ class _ProfilePageState extends State<ProfilePage> {
               ),
               ListTile(
                 leading: Icon(
-                  Icons.screen_lock_landscape_rounded,
+                  Icons.settings,
                   size: _drawerIconSize,
                   color: Theme.of(context).accentColor,
                 ),
                 title: Text(
-                  'Splash Screen',
+                  'Settings',
                   style: TextStyle(
                       fontSize: 17, color: Theme.of(context).accentColor),
                 ),
@@ -134,11 +136,11 @@ class _ProfilePageState extends State<ProfilePage> {
                 },
               ),
               ListTile(
-                leading: Icon(Icons.login_rounded,
+                leading: Icon(Icons.save_alt_rounded,
                     size: _drawerIconSize,
                     color: Theme.of(context).accentColor),
                 title: Text(
-                  'Login Page',
+                  'Saved posts',
                   style: TextStyle(
                       fontSize: _drawerFontSize,
                       color: Theme.of(context).accentColor),
@@ -159,7 +161,7 @@ class _ProfilePageState extends State<ProfilePage> {
                     size: _drawerIconSize,
                     color: Theme.of(context).accentColor),
                 title: Text(
-                  'Registration Page',
+                  'Invite Friends',
                   style: TextStyle(
                       fontSize: _drawerFontSize,
                       color: Theme.of(context).accentColor),
@@ -177,12 +179,12 @@ class _ProfilePageState extends State<ProfilePage> {
               ),
               ListTile(
                 leading: Icon(
-                  Icons.password_rounded,
+                  Icons.help_outline,
                   size: _drawerIconSize,
                   color: Theme.of(context).accentColor,
                 ),
                 title: Text(
-                  'Forgot Password Page',
+                  'SoccerVio Features',
                   style: TextStyle(
                       fontSize: _drawerFontSize,
                       color: Theme.of(context).accentColor),
@@ -198,26 +200,6 @@ class _ProfilePageState extends State<ProfilePage> {
               Divider(
                 color: Theme.of(context).primaryColor,
                 height: 1,
-              ),
-              ListTile(
-                leading: Icon(
-                  Icons.verified_user_sharp,
-                  size: _drawerIconSize,
-                  color: Theme.of(context).accentColor,
-                ),
-                title: Text(
-                  'Verification Page',
-                  style: TextStyle(
-                      fontSize: _drawerFontSize,
-                      color: Theme.of(context).accentColor),
-                ),
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => ForgotPasswordPage()),
-                  );
-                },
               ),
               Divider(
                 color: Theme.of(context).primaryColor,
@@ -280,14 +262,14 @@ class _ProfilePageState extends State<ProfilePage> {
                     height: 20,
                   ),
                   Text(
-                    'Mr. Donald Trump',
+                    'Houria Shaibi',
                     style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
                   ),
                   SizedBox(
                     height: 20,
                   ),
                   Text(
-                    'Former President',
+                    'normal user',
                     style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                   ),
                   SizedBox(
@@ -327,18 +309,18 @@ class _ProfilePageState extends State<ProfilePage> {
                                               horizontal: 12, vertical: 4),
                                           leading: Icon(Icons.my_location),
                                           title: Text("Location"),
-                                          subtitle: Text("USA"),
+                                          subtitle: Text("Morocco"),
                                         ),
                                         ListTile(
                                           leading: Icon(Icons.email),
                                           title: Text("Email"),
                                           subtitle:
-                                              Text("donaldtrump@gmail.com"),
+                                              Text("houriashaibi02@gmail.com"),
                                         ),
                                         ListTile(
                                           leading: Icon(Icons.phone),
                                           title: Text("Phone"),
-                                          subtitle: Text("99--99876-56"),
+                                          subtitle: Text("+212-0000-56"),
                                         ),
                                         ListTile(
                                           leading: Icon(Icons.person),

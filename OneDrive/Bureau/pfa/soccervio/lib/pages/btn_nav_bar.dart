@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:soccervio/pages/profile/profile_page.dart';
 
-import 'package:soccervio/pages/profile/profile.dart';
 import 'package:soccervio/pages/search/search.dart';
 
 import 'home/home.dart';

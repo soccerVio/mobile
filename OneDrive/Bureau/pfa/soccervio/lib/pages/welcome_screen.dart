@@ -24,7 +24,7 @@ class WelcomeScreen extends StatelessWidget {
             ),
             Spacer(),
             Text(
-              "Share ur writing on IT topics and \nkeep in touch with your friends",
+              "Reserve now a sports ground to play your favorite sport and \nand invite your friend to play with you",
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: Theme.of(context)

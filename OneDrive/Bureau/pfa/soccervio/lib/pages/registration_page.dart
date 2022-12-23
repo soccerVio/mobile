@@ -6,7 +6,7 @@ import 'package:soccervio/common/theme_helper.dart';
 import 'package:soccervio/pages/btn_nav_bar.dart';
 import 'package:soccervio/pages/widgets/header_widget.dart';
 
-import 'profile_page.dart';
+import 'profile/profile_page.dart';
 
 class RegistrationPage extends StatefulWidget {
   @override

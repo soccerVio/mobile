@@ -21,7 +21,7 @@ List<Product> products = [
       title: "Terrain 1",
       price: 234,
       size: 12,
-      description: dummyText,
+      description: "Terrain description",
       image: "assets/images/bag_1.png",
       color: Color(0xFF3D82AE)),
   Product(
