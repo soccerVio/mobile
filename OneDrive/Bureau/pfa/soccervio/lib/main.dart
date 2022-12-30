@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:soccervio/booking.dart';
+import 'package:soccervio/datepicker.dart';
 import 'package:soccervio/pages/home/carousel_slider/carousel_slider.dart';
 import 'package:soccervio/pages/welcome_screen.dart';
 import 'package:soccervio/util/theme.dart';
@@ -21,7 +23,7 @@ class MyApp extends StatelessWidget {
       title: 'SoccerVio',
       theme: lightThemeData(context),
       darkTheme: darkThemeData(context),
-      home: WelcomeScreen(),
+      home: DateTimePicker(),
     );
   }
 }
