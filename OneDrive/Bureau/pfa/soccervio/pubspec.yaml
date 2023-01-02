@@ -45,6 +45,7 @@ dependencies:
   carousel_slider: ^3.0.0
   cached_network_image: ^3.0.0
   get: ^4.1.4
+  animate_do: ^2.0.0
 
   http: ^0.13.5
   standard_dialogs: ^2.0.0
@@ -81,6 +82,17 @@ flutter:
     - assets/images/
     - assets/lottie/
     - assets/icons/
+  fonts:
+    - family: NunitoSans
+      fonts:
+        - asset: assets/fonts/NunitoSans-Regular.ttf
+        - asset: assets/fonts/NunitoSans-SemiBold.ttf
+        - asset: assets/fonts/NunitoSans-Bold.ttf
+        - asset: assets/fonts/NunitoSans-Black.ttf
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+        - asset: assets/fonts/Roboto-Black.ttf  
   
 
   # An image asset can refer to one or more resolution-specific "variants", see

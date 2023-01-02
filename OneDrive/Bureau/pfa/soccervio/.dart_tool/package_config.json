@@ -2,6 +2,12 @@
   "configVersion": 2,
   "packages": [
     {
+      "name": "animate_do",
+      "rootUri": "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/animate_do-2.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "archive",
       "rootUri": "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/archive-3.3.5",
       "packageUri": "lib/",
@@ -500,7 +506,7 @@
       "languageVersion": "2.17"
     }
   ],
-  "generated": "2022-12-29T23:03:26.060230Z",
+  "generated": "2023-01-01T19:40:11.289456Z",
   "generator": "pub",
   "generatorVersion": "2.17.1"
 }

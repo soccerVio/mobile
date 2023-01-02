@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_datetime_picker/flutter_datetime_picker.dart';
 import 'package:soccervio/constants.dart';
+import 'package:soccervio/reservation/constant.dart';
 
-void main() => runApp(DateTimePicker());
+// void main() => runApp(DateTimePicker());
 
 class DateTimePicker extends StatefulWidget {
   @override
@@ -13,6 +14,10 @@ class _DateTimePickerState extends State<DateTimePicker> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        fontFamily: 'NunitoSans',
+        scaffoldBackgroundColor: kPrimaryColor,
+      ),
       debugShowCheckedModeBanner: false,
       home: HomeScreen(),
     );
@@ -55,7 +60,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.transparent,
         title: Text('Make a reservation'),
         centerTitle: true,
       ),
@@ -271,7 +276,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               Text(
                                 "Available Timings",
                                 style: TextStyle(
-                                    color: Colors.black54,
+                                    color: Colors.white60,
                                     fontSize: 20,
                                     fontWeight: FontWeight.bold),
                               ),
@@ -280,7 +285,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               ),
                               Container(
                                 width: 55,
-                                color: Colors.black54,
+                                color: Colors.white60,
                                 height: 3,
                               ),
                               SizedBox(
@@ -322,7 +327,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                               Text(
                                                 '09:00',
                                                 style: TextStyle(
-                                                  color: Colors.white,
+                                                  color: Colors.white60,
                                                   fontSize: 20,
                                                   fontWeight: FontWeight.w500,
                                                 ),
@@ -330,7 +335,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                               Text(
                                                 'AM',
                                                 style: TextStyle(
-                                                  color: Colors.white,
+                                                  color: Colors.white60,
                                                   fontSize: 20,
                                                   fontWeight: FontWeight.w500,
                                                 ),
@@ -360,7 +365,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               Text(
                                 "Number of players",
                                 style: TextStyle(
-                                    color: Colors.black54,
+                                    color: Colors.white60,
                                     fontSize: 20,
                                     fontWeight: FontWeight.bold),
                               ),
@@ -369,7 +374,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               ),
                               Container(
                                 width: 55,
-                                color: Colors.black54,
+                                color: Colors.white60,
                                 height: 3,
                               ),
                               SizedBox(
@@ -393,8 +398,11 @@ class _HomeScreenState extends State<HomeScreen> {
                                     child: Text(
                                       // if our item is less  then 10 then  it shows 01 02 like that
                                       numOfItems.toString().padLeft(2, "0"),
-                                      style:
-                                          Theme.of(context).textTheme.headline6,
+
+                                      style: TextStyle(
+                                          color: Colors.white60,
+                                          fontWeight: FontWeight.bold),
+                                      // Theme.of(context).textTheme.headline6,
                                     ),
                                   ),
                                   buildOutlineButton(
@@ -412,9 +420,29 @@ class _HomeScreenState extends State<HomeScreen> {
                             ],
                           ),
                         ),
+                        TextButton(
+                          onPressed: () {
+                            // Navigator.of(context).pop();
+                            // DateTimePicker();
+                            Navigator.of(context).push(MaterialPageRoute(
+                                builder: (context) => DateTimePicker()));
+                          },
+                          child: const Text('Book Now'),
+                          style: TextButton.styleFrom(
+                            primary: const Color(0xffffffff),
+                            backgroundColor: kSecondaryColor,
+                            textStyle: nunitoRegular17,
+                            shape: const RoundedRectangleBorder(
+                              borderRadius: BorderRadius.all(
+                                Radius.circular(15),
+                              ),
+                            ),
+                          ),
+                        ),
+
                         Divider(
                           height: 15,
-                          color: Colors.grey,
+                          color: Colors.white60,
                         ),
 
                         // Divider(

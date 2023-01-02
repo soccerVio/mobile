@@ -22,7 +22,7 @@ List<Product> products = [
       price: 234,
       size: 12,
       description: "Terrain description",
-      image: "assets/images/bag_1.png",
+      image: "assets/images/terrain.jpg",
       color: Color(0xFF3D82AE)),
   Product(
       id: 2,
@@ -30,7 +30,7 @@ List<Product> products = [
       price: 234,
       size: 8,
       description: dummyText,
-      image: "assets/images/bag_2.png",
+      image: "assets/images/terrain.jpg",
       color: Color(0xFFD3A984)),
   Product(
       id: 3,
