@@ -1,4 +1,4 @@
-List<String> chip = ["Terrains", "Flats", "Resorts", "Apartment"];
+List<String> chip = ["Terrains"];
 
 List<Object> popular = [
   {

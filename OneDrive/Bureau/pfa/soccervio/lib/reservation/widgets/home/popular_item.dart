@@ -46,7 +46,7 @@ class PopularItem extends StatelessWidget {
                   width: MediaQuery.of(context).size.width * 0.5,
                   child: ClipRRect(
                     borderRadius: const BorderRadius.all(Radius.circular(15)),
-                    child: Image.asset(
+                    child: Image.network(
                       imageUrl,
                       scale: 4,
                       fit: BoxFit.cover,
