@@ -24,3 +24,27 @@ class RecipeApi {
     return Recipe.recipesFromSnapshot(_temp);
   }
 }
+
+class TerrainApi {
+  static Future<List<terrain>> getTerrain() async {
+    var uri = Uri.https(
+        'https://bee3-105-154-211-124.eu.ngrok.io', '/api/v1/terrains');
+
+    final response = await http.get(uri
+        // , headers: {
+        //   "x-rapidapi-key": "77011c6577msh67507fe91be686bp1ca1f8jsn231786e3f440",
+        //   "x-rapidapi-host": "yummly2.p.rapidapi.com",
+        //   "useQueryString": "true"
+        // }
+        );
+
+    Map data = jsonDecode(response.body);
+    List _temp = [];
+
+    for (var i in data['terrains']) {
+      _temp.add(i['content']['details']);
+    }
+
+    return terrain.terrainsFromSnapshot(_temp);
+  }
+}

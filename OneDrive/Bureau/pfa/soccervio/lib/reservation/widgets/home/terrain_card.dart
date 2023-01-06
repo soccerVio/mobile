@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class RecipeCard extends StatelessWidget {
@@ -36,7 +37,8 @@ class RecipeCard extends StatelessWidget {
             Colors.black.withOpacity(0.35),
             BlendMode.multiply,
           ),
-          image: NetworkImage(thumbnailUrl),
+          // image: NetworkImage(thumbnailUrl),
+          image: AssetImage('assets/images/terrain.jpg'),
           fit: BoxFit.cover,
         ),
       ),
